@@ -39,5 +39,3 @@ enum MovableType {
     SPEAKER,
     VINYLS
 }
-
-
