@@ -1,13 +1,9 @@
 import java.io.*;
 
 public class Main implements Serializable {
-
     public static void main(String[] args) {
-
-        Room room = new Room("theRoom");
-
-        Room.roomPopulate(room);
-
+        
+        Room.roomPopulate(new Room("theRoom"));
         try {
             FileOutputStream fos = new FileOutputStream("src\\main\\resources\\room.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -24,7 +20,5 @@ public class Main implements Serializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }
