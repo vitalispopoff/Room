@@ -15,7 +15,7 @@ public class Bound implements Cloneable, Serializable {
         this.type = type;
         this.location = location;
         this.outfits = new ArrayList<>();
-        if (hasInner){this.inner = new ArrayList<>();}
+        if (hasInner) this.inner = new ArrayList<>();
     }
 
     @Override
@@ -23,15 +23,13 @@ public class Bound implements Cloneable, Serializable {
         return ("\n"+type
                 +": "
                 +location.toString()
-                +":\n"+ inner
-        );
+                +":\n"+ inner);
     }
 
 enum Surface {
     WALL,
     FLOOR,
     CEILING
-
 }
 
     enum Outfit {
