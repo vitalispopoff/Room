@@ -10,7 +10,6 @@ public class Room implements Serializable {
     public Room(){
         this.hasInner = true;
         this.inner = new ArrayList<>();
-
     }
 
     public Room(String name) {
@@ -23,8 +22,6 @@ public class Room implements Serializable {
         return (name
                 +": "
                 + inner.toString());
-
-
     }
 
     @Override
@@ -33,7 +30,6 @@ public class Room implements Serializable {
     }
 
     public static void roomPopulate(Room room){
-
         Location northWallLoc = new Location(Quarter.NORTH, HorizontalOrientation.MIDDLE, VerticalOrientation.MID);
         Bound northWall = new Bound("windowWall", Bound.Surface.WALL, northWallLoc, true);
         room.inner.add(northWall);
@@ -107,7 +103,5 @@ public class Room implements Serializable {
         rightStand.inner.add(new Movables(MovableType.SPEAKER));
         floor.inner.add(stool);
         floor.inner.add(chair);
-
     }
-
 }
