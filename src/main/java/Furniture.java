@@ -25,14 +25,11 @@ public class Furniture implements Cloneable, Serializable {
         else cache = "";*/
         cache = hasInner ? inner.toString() : "";
         return (furnitureType
-                + cache
-        );
+                + cache);
     }
-
 }
 
 enum FurnitureType {
-
     ABSORBER,
     BED,
     CHAIR,
